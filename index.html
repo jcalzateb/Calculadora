@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="calculadora">
+      <input type="text" id="pantalla" value="0" disabled />
+
+      <div class="grupo-complejo">
+        <button onclick="agregarCaracter('Rad')">Rad</button>
+        <button onclick="agregarCaracter('Deg')">Deg</button>
+        <button onclick="factorial()">x!</button>
+        <button onclick="agregarCaracter('Inv')">Inv</button>
+        <button onclick="agregarFuncion('sin')">sin</button>
+        <button onclick="agregarFuncion('cos')">cos</button>
+        <button onclick="agregarCaracter('e')">e</button>
+        <button onclick="agregarFuncion('tan')">tan</button>
+        <button onclick="agregarCaracter('Ans')">Ans</button>
+        <button onclick="agregarCaracter('EXP')">EXP</button>
+        <button onclick="agregarCaracter('^')">xʸ</button>
+        <button onclick="agregarFuncion('log')">log</button>
+      </div>
+
+      <div class="grupo-parentesis">
+        <button onclick="agregarCaracter('(')">(</button>
+        <button onclick="agregarCaracter(')')">)</button>
+        <button onclick="agregarCaracter('%')">%</button>
+      </div>
+
+      <div class="grupo-numeros">
+        <button onclick="agregarCaracter('7')">7</button>
+        <button onclick="agregarCaracter('8')">8</button>
+        <button onclick="agregarCaracter('9')">9</button>
+        <button onclick="agregarCaracter('4')">4</button>
+        <button onclick="agregarCaracter('5')">5</button>
+        <button onclick="agregarCaracter('6')">6</button>
+        <button onclick="agregarCaracter('1')">1</button>
+        <button onclick="agregarCaracter('2')">2</button>
+        <button onclick="agregarCaracter('3')">3</button>
+        <button onclick="agregarCaracter('0')">0</button>
+        <button onclick="agregarCaracter('.')">.</button>
+      </div>
+
+      <div class="grupo-operaciones">
+        <button onclick="agregarCaracter('+')">+</button>
+        <button onclick="agregarCaracter('-')">−</button>
+        <button onclick="agregarCaracter('*')">×</button>
+        <button onclick="agregarCaracter('/')">÷</button>
+      </div>
+
+      <div class="grupo-resultado">
+        <button onclick="limpiarPantalla()">AC</button>
+        <button onclick="borrarUltimo()">DEL</button>
+        <button onclick="calcular()">=</button>
+      </div>
+    </div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
